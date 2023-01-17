@@ -10,3 +10,37 @@
 .inter { font-family: Inter; }
 .segoe-ui-emoji { font-family: Segoe UI Emoji; }
 
+.svg-icon
+{
+    display: block;
+    width: 25px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.bullet-01
+{
+    background-image: url('../svgs/01.svg');
+}
+
+.bullet-02
+{
+    background-image: url('../svgs/02.svg');
+}
+.bullet-03
+{
+    background-image: url('../svgs/03.svg');
+}
+.bullet-04
+{
+    background-image: url('../svgs/04.svg');
+}
+.bullet-05
+{
+    background-image: url('../svgs/05.svg');
+}
+.bullet-06
+{
+    background-image: url('../svgs/06.svg');
+}
