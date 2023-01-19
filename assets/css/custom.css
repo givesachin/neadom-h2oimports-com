@@ -1,0 +1,77 @@
+
+.section3-bullet-number
+{
+    width: 50px; 
+    height: 50px; 
+    position: absolute; 
+    background-color: #127cb3; 
+    border: 3px solid #9ec7df;
+}
+.section3-text
+{
+    padding: 0 10px 0 60px; 
+    border: 3px solid #9ec7df;
+    line-height: 1.3;
+}
+
+.my-form
+{
+    min-height: 250px; 
+    max-width: 450px;
+    background-color: #127cb3;
+}
+.bullet-form
+{
+    background: linear-gradient(90deg, rgba(139,139,139,0.9) 0%, rgba(139,139,139,0.9) 100%), url('../../assets/images/5017-702.png'); 
+    background-size: cover;
+}
+
+.who-title
+{
+    margin-top: 50px;
+}
+
+@media (min-width: 768px)
+{
+    .pipe-form
+    {
+        position: absolute;
+    }
+    .who-container
+    {
+        margin-left: 10px;
+    }
+    .who-title
+    {
+        margin-top: 0;
+    }
+}
+
+.submit
+{
+    background-color: inherit; 
+    border: 1px solid white;
+}
+.h-50
+{
+    min-height: 69px;
+    height: 75px;
+    max-height: 75px;
+}
+@media (min-width: 300px)
+{
+    .h-50
+    {
+        min-height: 46px;
+        height: 50px;
+        max-height: 50px;
+    }
+}
+.h-450
+{
+    height: 50px;
+}
+.modal-color
+{
+    color: #127cb3;
+}

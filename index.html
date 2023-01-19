@@ -17,109 +17,117 @@
 
     <header class="bg-white">
         <div class="py-4 px-5">
-            <img src="assets/svgs/H2O_Imports_Logo.svg" alt="logo" />
+            <img src="assets/svgs/H2O_Imports_Logo.svg" alt="logo"/>
         </div>
     </header>
 
     <div class="w-100">
 
         <div>
-            <img class="w-100 d-none" src="assets/images/FOTO PLANTA 1.png" alt="plant" />
-            <div class="w-100 h-100" style="position: absolute;">
+            <img class="w-100 d-block d-md-none" style="min-height: 300px; object-fit: cover;" src="assets/images/FOTO PLANTA 1.png" alt="plant" />
+            <div class="w-100 h-100 pipe-form">
                 <div class="container w-100 h-100">
-                    <div class="row w-100 h-100">
-                        <div class="col-8"></div>
-                        <div class="col-4">
-                            <form class="text-white mt-4" style="min-height: 250px; max-width: 300px; background-color: #127cb3;">
-                                <div class="roboto-black text-center pt-3 px-3" style="font-size: 24px;">GET MY PIPE</div>
-                                <div class="sergoe-ui-emoji text-center px-3" style="font-size: 14px;">Tell us about what you are looking for.</div>
-                                <div class="w-100 px-3 pt-4 pb-2">
-                                    <input class="w-100 px-2" id="first_name" name="first_name" placeholder="First Name" />
-                                </div>
-                                <div class="w-100 px-3 py-2">
-                                    <input class="w-100 px-2" id="last_name" name="last_name" placeholder="Last Name" />
-                                </div>
-                                <div class="w-100 px-3 py-2">
-                                    <input class="w-100 px-2" id="company" name="company" placeholder="Company Name" />
-                                </div>
-                                <div class="w-100 px-3 py-2">
-                                    <input class="w-100 px-2" id="email" name="email" placeholder="Email Address" />
-                                </div>
-                                <div class="w-100 px-3 pt-2 pb-4">
-                                    <input class="w-100 px-2" id="phone" name="phone" placeholder="Phone Number" />
-                                </div>
-                                <div class="sergoe-ui-emoji px-3 pb-3" style="font-size: 10px;">Product Interested In: (We only sell truckload quantities, You can mix sizes on one truck)</div>
-                                <div class="form-check d-flex align-items-center mx-4">
-                                    <input class="form-check-input" type="checkbox" value="YES" name="pipe_0_5" id="flexCheckDefault">
-                                    <label class="form-check-label sergoe-ui-emoji mt-1 mx-2" style="font-size: 10px;" for="flexCheckDefault">
-                                        1/2 Inch
-                                    </label>
-                                </div>
-                                <div class="form-check d-flex align-items-center mx-4">
-                                    <input class="form-check-input" type="checkbox" value="YES" name="pipe_1" id="flexCheckDefault">
-                                    <label class="form-check-label sergoe-ui-emoji mt-1 mx-2" style="font-size: 10px;" for="flexCheckChecked">
-                                        1 Inch
-                                    </label>
-                                </div>
-                                <div class="form-check d-flex align-items-center mx-4">
-                                    <input class="form-check-input" type="checkbox" value="YES" name="pipe_1_5" id="flexCheckDefault">
-                                    <label class="form-check-label sergoe-ui-emoji mt-1 mx-2" style="font-size: 10px;" for="flexCheckChecked">
-                                        1.5 Inch
-                                    </label>
-                                </div>
-                                <div class="form-check d-flex align-items-center mx-4">
-                                    <input class="form-check-input" type="checkbox" value="YES" name="pipe_2" id="flexCheckDefault">
-                                    <label class="form-check-label sergoe-ui-emoji mt-1 mx-2" style="font-size: 10px;" for="flexCheckChecked">
-                                        2 Inch
-                                    </label>
-                                </div>
-                                <div class="form-check d-flex align-items-center mx-4">
-                                    <input class="form-check-input" type="checkbox" value="YES" name="pipe_2_5" id="flexCheckDefault">
-                                    <label class="form-check-label sergoe-ui-emoji mt-1 mx-2" style="font-size: 10px;" for="flexCheckChecked">
-                                        2 1/2 Inch
-                                    </label>
-                                </div>
-                                <div class="form-check d-flex align-items-center mx-4">
-                                    <input class="form-check-input" type="checkbox" value="YES" name="pipe_3" id="flexCheckDefault">
-                                    <label class="form-check-label sergoe-ui-emoji mt-1 mx-2" style="font-size: 10px;" for="flexCheckChecked">
-                                        3 Inch
-                                    </label>
-                                </div>
-                                <div class="form-check d-flex align-items-center mx-4 mb-4">
-                                    <input class="form-check-input" type="checkbox" value="YES" name="pipe_4" id="flexCheckDefault">
-                                    <label class="form-check-label sergoe-ui-emoji mt-1 mx-2" style="font-size: 10px;" for="flexCheckChecked">
-                                        4 Inch
-                                    </label>
-                                </div>
-                                <div class="d-flex justify-content-center">
-                                    <button class="text-white mb-4 px-5" type="submit" style="background-color: inherit; border: 1px solid white;">
-                                        SUBMIT</button>
-                                </div>
-                            </form>
+                    <div class="row w-100 h-100 justify-content-center m-0">
+                        <div class="col-8 d-none d-md-block"></div>
+                        <div class="col-12 col-md-4">
+                            <div class="d-flex justify-content-center">
+                                <form class="text-white my-form mt-4">
+                                    <div class="roboto-black text-center pt-3 px-3 font-24px">
+                                        GET MY PIPE
+                                    </div>
+                                    <div class="sergoe-ui-emoji text-center px-3 font-14px">
+                                        Tell us about what you are looking for.
+                                    </div>
+                                    <div class="w-100 px-3 pt-4 pb-2">
+                                        <input class="w-100 px-2 segoe-ui-emoji font-10px" id="first_name" name="first_name" value="" placeholder="First Name" required />
+                                    </div>
+                                    <div class="w-100 px-3 py-2">
+                                        <input class="w-100 px-2 segoe-ui-emoji font-10px" id="last_name" name="last_name" placeholder="Last Name" />
+                                    </div>
+                                    <div class="w-100 px-3 py-2">
+                                        <input class="w-100 px-2 segoe-ui-emoji font-10px" id="company" name="company" placeholder="Company Name" />
+                                    </div>
+                                    <div class="w-100 px-3 py-2">
+                                        <input class="w-100 px-2 segoe-ui-emoji font-10px" id="email" name="email" placeholder="Email Address" required />
+                                    </div>
+                                    <div class="w-100 px-3 pt-2 pb-4">
+                                        <input class="w-100 px-2 segoe-ui-emoji font-10px" id="phone" name="phone" placeholder="Phone Number" />
+                                    </div>
+                                    <div class="sergoe-ui-emoji px-3 pb-3 font-10px">
+                                        Product Interested In: (We only sell truckload quantities, You can mix sizes on one truck)
+                                    </div>
+                                    <div class="form-check d-flex align-items-center mx-4">
+                                        <input class="form-check-input" type="checkbox" value="YES" name="pipe_0_5" id="flexCheck1">
+                                        <label class="form-check-label sergoe-ui-emoji mt-1 mx-2 font-10px" for="flexCheckDefault">
+                                            1/2 Inch
+                                        </label>
+                                    </div>
+                                    <div class="form-check d-flex align-items-center mx-4">
+                                        <input class="form-check-input" type="checkbox" value="YES" name="pipe_1" id="flexCheck2">
+                                        <label class="form-check-label sergoe-ui-emoji mt-1 mx-2 font-10px" for="flexCheckChecked">
+                                            1 Inch
+                                        </label>
+                                    </div>
+                                    <div class="form-check d-flex align-items-center mx-4">
+                                        <input class="form-check-input" type="checkbox" value="YES" name="pipe_1_5" id="flexCheck3">
+                                        <label class="form-check-label sergoe-ui-emoji mt-1 mx-2 font-10px" for="flexCheckChecked">
+                                            1.5 Inch
+                                        </label>
+                                    </div>
+                                    <div class="form-check d-flex align-items-center mx-4">
+                                        <input class="form-check-input" type="checkbox" value="YES" name="pipe_2" id="flexCheck4">
+                                        <label class="form-check-label sergoe-ui-emoji mt-1 mx-2 font-10px" for="flexCheckChecked">
+                                            2 Inch
+                                        </label>
+                                    </div>
+                                    <div class="form-check d-flex align-items-center mx-4">
+                                        <input class="form-check-input" type="checkbox" value="YES" name="pipe_2_5" id="flexCheck5">
+                                        <label class="form-check-label sergoe-ui-emoji mt-1 mx-2 font-10px" for="flexCheckChecked">
+                                            2 1/2 Inch
+                                        </label>
+                                    </div>
+                                    <div class="form-check d-flex align-items-center mx-4">
+                                        <input class="form-check-input" type="checkbox" value="YES" name="pipe_3" id="flexCheck6">
+                                        <label class="form-check-label sergoe-ui-emoji mt-1 mx-2 font-10px" for="flexCheckChecked">
+                                            3 Inch
+                                        </label>
+                                    </div>
+                                    <div class="form-check d-flex align-items-center mx-4 mb-4">
+                                        <input class="form-check-input" type="checkbox" value="YES" name="pipe_4" id="flexCheck7">
+                                        <label class="form-check-label sergoe-ui-emoji mt-1 mx-2 font-10px" for="flexCheckChecked">
+                                            4 Inch
+                                        </label>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <button class="text-white mb-4 px-5 submit" type="submit">
+                                            SUBMIT</button>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <img class="w-100" src="assets/images/FOTO PLANTA 1.png" alt="plant" />
+            <img class="w-100 d-none d-md-block" src="assets/images/FOTO PLANTA 1.png" alt="plant" />
         </div>
 
-        <div class="container my-4">
+        <div class="container my-4 mb-5 who-container">
             <div class="row">
-                <div class="col-8">
+                <div class="col-12 col-md-8">
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-12 col-md-6">
                             <img class="w-100" src="assets/images/5017-694.png" alt="plant" />
                         </div>
-                        <div class="col-6">
-                            <div class="text-center roboto-black mb-3" style="font-weight: 700; font-size: 28px; color: #127CB3;">
+                        <div class="col-12 col-md-6">
+                            <div class="text-center roboto-black mb-3 font-28px modal-color fw-700 who-title">
                                 WHO ARE WE?
                             </div>
-                            <div class="intern" style="font-weight: 400; font-size: 18px; color: #127CB3;">
+                            <div class="intern font-18px modal-color fw-400">
                                 H2O Imports is a truckload quantity wholesaler. When buying from us, you save thousands by not paying distribution profit. We sell directly to you from the manufacturer! Contact us today to get your truckload quantity price!
                             </div>
                         </div>
                 </div>
-                <div class="col-4">
+                <div class="col-4 d-none d-md-block">
 
                 </div>
             </div>
@@ -127,88 +135,71 @@
 
     </div>
 
-    <div class="w-100" style="height: 450px;">
-        <div class="w-100" style="position: absolute; height: 450px; background-color: rgba(139, 139, 139, 0.9);">
-            <div class="container pt-3">
-                <div class="text-center roboto-black mt-5 mb-3 text-white" style="font-size: 36px;">
-                    HOW DOES THIS WORK?
-                </div>
+    <div class="w-100 bullet-form">
+        <div class="container pt-3">
+            <div class="text-center roboto-black mt-4 mb-3 text-white font-36px">
+                HOW DOES THIS WORK?
+            </div>
 
-                <style>
-                    .section3-bullet-number
-                    {
-                        width: 50px; 
-                        height: 50px; 
-                        position: absolute; 
-                        background-color: #127cb3; 
-                        border: 3px solid #9ec7df;
-                    }
-                    .section3-text
-                    {
-                        padding: 0 10px 0 60px; 
-                        border: 3px solid #9ec7df;
-                        line-height: 1.3;
-                    }
-                </style>
-
-                <div class="row">
-                    <div class="col-12 col-md-6">
-                        <div class="w-100 segoe-ui-emoji bg-white my-3" style="height: 50px;">
-                            <div class="section3-bullet-number d-flex justify-content-center align-items-center">
+            <div class="row pb-5">
+                <div class="col-12 col-md-6">
+                    <div class="">
+                        <div class="w-100 segoe-ui-emoji bg-white my-3">
+                            <div class="section3-bullet-number d-flex justify-content-center align-items-center h-50">
                                 <span class="svg-icon bullet-01"></span>
                             </div>
                             <div class="h-100 section3-text">
-                                <div class="h-100 d-flex align-items-center">You tell us what product you are interested in.</div>
+                                <div class="h-100 d-flex align-items-center h-50">You tell us what product you are interested in.</div>
                             </div>
                         </div>
-                        <div class="w-100 segoe-ui-emoji bg-white my-3" style="height: 50px;">
-                            <div class="section3-bullet-number d-flex justify-content-center align-items-center">
+                        <div class="w-100 segoe-ui-emoji bg-white my-3">
+                            <div class="section3-bullet-number d-flex justify-content-center align-items-center h-50">
                                 <span class="svg-icon bullet-02"></span>
                             </div>
                             <div class="h-100 section3-text">
-                                <div class="h-100 d-flex align-items-center">We quote you your truck</div>
+                                <div class="h-100 d-flex align-items-center h-50">We quote you your truck</div>
                             </div>
                         </div>
-                        <div class="w-100 segoe-ui-emoji bg-white my-3" style="height: 50px;">
-                            <div class="section3-bullet-number d-flex justify-content-center align-items-center">
+                        <div class="w-100 segoe-ui-emoji bg-white my-3">
+                            <div class="section3-bullet-number d-flex justify-content-center align-items-center h-50">
                                 <span class="svg-icon bullet-03"></span>
                             </div>
                             <div class="h-100 section3-text">
-                                <div class="h-100 d-flex align-items-center">You accept the quote and make your first payment</div>
+                                <div class="h-100 d-flex align-items-center h-50">You accept the quote and make your first payment</div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6">
-                        <div class="w-100 segoe-ui-emoji bg-white my-3" style="height: 50px;">
-                            <div class="section3-bullet-number d-flex justify-content-center align-items-center">
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="">
+                        <div class="w-100 segoe-ui-emoji bg-white my-3">
+                            <div class="section3-bullet-number d-flex justify-content-center align-items-center h-50">
                                 <span class="svg-icon bullet-04"></span>
                             </div>
                             <div class="h-100 section3-text">
-                                <div class="h-100 d-flex align-items-center">We place your order</div>
+                                <div class="h-100 d-flex align-items-center h-50">We place your order</div>
                             </div>
                         </div>
-                        <div class="w-100 segoe-ui-emoji bg-white my-3" style="height: 50px;">
-                            <div class="section3-bullet-number d-flex justify-content-center align-items-center">
+                        <div class="w-100 segoe-ui-emoji bg-white my-3">
+                            <div class="section3-bullet-number d-flex justify-content-center align-items-center h-50">
                                 <span class="svg-icon bullet-05"></span>
                             </div>
                             <div class="h-100 section3-text">
-                                <div class="h-100 d-flex align-items-center">Your product arrives</div>
+                                <div class="h-100 d-flex align-items-center h-50">Your product arrives</div>
                             </div>
                         </div>
-                        <div class="w-100 segoe-ui-emoji bg-white my-3" style="height: 50px;">
-                            <div class="section3-bullet-number d-flex justify-content-center align-items-center">
+                        <div class="w-100 segoe-ui-emoji bg-white my-3">
+                            <div class="section3-bullet-number d-flex justify-content-center align-items-center h-50">
                                 <span class="svg-icon bullet-06"></span>
                             </div>
                             <div class="h-100 section3-text">
-                                <div class="h-100 d-flex align-items-center">You make your final payment</div>
+                                <div class="h-100 d-flex align-items-center h-50">You make your final payment</div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
         </div>
-        <img class="w-100 h-100" src="assets/images/5017-702.png" alt="plant" style="object-fit: cover;" />
     </div>
 
     <footer class="bg-white">
