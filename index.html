@@ -288,21 +288,55 @@
                 }                   
             });
 
-            let new_data = {};
+            let new_data = {}, count = 0;
 
             new_data.name = data.first_name + ' ' + data.last_name;
             new_data.email = data.email;
-            new_data.message = encodeURIComponent(
+            new_data.message = '\r\n' +
                     'Company : ' + data.company + '\r\n' +
                     'Phone : ' + data.phone + '\r\n' +
-                    'Pipes : ' + (data.pipe_0_5 === "off" ? "1/2 Inch" : "") +
-                    (data.pipe_1 === "off" ? ", 1 Inch" : "") +
-                    (data.pipe_1_5 === "off" ? ", 1 1/5 Inch" : "") +
-                    (data.pipe_2 === "off" ? ", 2 Inch" : "") +
-                    (data.pipe_2_5 === "off" ? ", 2 1/2 Inch" : "") +
-                    (data.pipe_3 === "off" ? ", 3 Inch" : "") +
-                    (data.pipe_4 === "off" ? ", 4 Inch" : "")
-                );
+                    'Pipes : ';
+
+            if (data.pipe_0_5 !== "off")
+            {
+                new_data.message = new_data.message + "1/2 Inch";
+                ++count;
+            }
+
+            if (data.pipe_1 !== "off")
+            {
+                new_data.message = new_data.message + (count > 0 ? ", ": "") + "1 Inch";
+                ++count;
+            }
+
+            if (data.pipe_2 !== "off")
+            {
+                new_data.message = new_data.message + (count > 0 ? ", ": "") + "2 Inch";
+                ++count;
+            }
+
+            if (data.pipe_3 !== "off")
+            {
+                new_data.message = new_data.message + (count > 0 ? ", ": "") + "3 Inch";
+                ++count;
+            }
+
+            if (data.pipe_4 !== "off")
+            {
+                new_data.message = new_data.message + (count > 0 ? ", ": "") + "4 Inch";
+                ++count;
+            }
+
+            if (data.pipe_1_5 !== "off")
+            {
+                new_data.message = new_data.message + (count > 0 ? ", ": "") + "1 1/2 Inch";
+                ++count;
+            }
+
+            if (data.pipe_2_5 !== "off")
+            {
+                new_data.message = new_data.message + (count > 0 ? ", ": "") + "2 1/2 Inch";
+            }
 
             submitData(new_data);
         }
@@ -316,6 +350,16 @@
                 mode :'no-cors',
                 body : JSON.stringify(data),
             }).then( response => {
+                $('#new_form').find('input, textarea, select').each(function(x, field) {
+                    if(field.type == 'checkbox')
+                    {
+                        field.value = 'off';
+                        field.checked = false;
+                    } else {
+                        field.value = null;
+                    }  
+                });
+
                 $("#preloader").fadeOut();
                 $('#successModal').modal('show');
             } )
