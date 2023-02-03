@@ -41,19 +41,19 @@
                                         Tell us about what you are looking for.
                                     </div>
                                     <div class="w-100 px-3 pt-4 pb-2">
-                                        <input class="w-100 px-2 segoe-ui-emoji font-10px" id="first_name" name="first_name" value="" placeholder="First Name" required />
+                                        <input class="w-100 px-2 segoe-ui-emoji font-10px" type="text" id="first_name" name="first_name" value="" placeholder="First Name" required />
                                     </div>
                                     <div class="w-100 px-3 py-2">
-                                        <input class="w-100 px-2 segoe-ui-emoji font-10px" id="last_name" name="last_name" placeholder="Last Name" />
+                                        <input class="w-100 px-2 segoe-ui-emoji font-10px" type="text" id="last_name" name="last_name" placeholder="Last Name" />
                                     </div>
                                     <div class="w-100 px-3 py-2">
-                                        <input class="w-100 px-2 segoe-ui-emoji font-10px" id="company" name="company" placeholder="Company Name" />
+                                        <input class="w-100 px-2 segoe-ui-emoji font-10px" type="text" id="company" name="company" placeholder="Company Name" />
                                     </div>
                                     <div class="w-100 px-3 py-2">
-                                        <input class="w-100 px-2 segoe-ui-emoji font-10px" id="email" name="email" placeholder="Email Address" required />
+                                        <input class="w-100 px-2 segoe-ui-emoji font-10px" type="email" id="email" name="email" placeholder="Email Address" required />
                                     </div>
                                     <div class="w-100 px-3 pt-2 pb-4">
-                                        <input class="w-100 px-2 segoe-ui-emoji font-10px" id="phone" name="phone" placeholder="Phone Number" />
+                                        <input class="w-100 px-2 segoe-ui-emoji font-10px" type="tel" id="phone" name="phone" placeholder="Phone Number" />
                                     </div>
                                     <div class="sergoe-ui-emoji px-3 pb-3 font-10px">
                                         Product Interested In: (We only sell truckload quantities, You can mix sizes on one truck)
@@ -76,7 +76,7 @@
                                         <input class="form-check-input" type="checkbox"  name="pipe_1_5" id="flexCheck3"
                                         value="off" onclick="toggle('flexCheck3')">
                                         <label class="form-check-label sergoe-ui-emoji mt-1 mx-2 font-10px" for="flexCheckChecked">
-                                            1.5 Inch
+                                            1 1/2 Inch
                                         </label>
                                     </div>
                                     <div class="form-check d-flex align-items-center mx-4">
@@ -288,7 +288,23 @@
                 }                   
             });
 
-            submitData(data);
+            let new_data = {};
+
+            new_data.name = data.first_name + ' ' + data.last_name;
+            new_data.email = data.email;
+            new_data.message = encodeURIComponent(
+                    'Company : ' + data.company + '\r\n' +
+                    'Phone : ' + data.phone + '\r\n' +
+                    'Pipes : ' + (data.pipe_0_5 === "off" ? "1/2 Inch" : "") +
+                    (data.pipe_1 === "off" ? ", 1 Inch" : "") +
+                    (data.pipe_1_5 === "off" ? ", 1 1/5 Inch" : "") +
+                    (data.pipe_2 === "off" ? ", 2 Inch" : "") +
+                    (data.pipe_2_5 === "off" ? ", 2 1/2 Inch" : "") +
+                    (data.pipe_3 === "off" ? ", 3 Inch" : "") +
+                    (data.pipe_4 === "off" ? ", 4 Inch" : "")
+                );
+
+            submitData(new_data);
         }
         
         async function submitData(data = {})
