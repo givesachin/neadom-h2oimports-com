@@ -9,7 +9,7 @@
     <title>H2O Imports</title>
     <!-- jquery script file -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    
+
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/theme.css">
     <link rel="stylesheet" href="assets/css/custom.css">
@@ -17,131 +17,140 @@
 
 <body>
 
-    <header class="bg-white">
-        <div class="py-4 px-5">
-            <img src="assets/svgs/H2O_Imports_Logo.svg" alt="logo"/>
-        </div>
-    </header>
+<header class="bg-white">
+    <div class="py-4 px-5">
+        <img src="assets/svgs/H2O_Imports_Logo.svg" alt="logo"/>
+    </div>
+</header>
 
-    <div class="w-100">
+<div class="w-100">
 
-        <div>
-            <img class="w-100 d-block d-md-none" style="min-height: 300px; object-fit: cover;" src="assets/images/FOTO PLANTA 1.png" alt="plant" />
-            <div class="w-100 h-100 pipe-form">
-                <div class="container w-100 h-100">
-                    <div class="row w-100 h-100 justify-content-center m-0">
-                        <div class="col-8 d-none d-md-block"></div>
-                        <div class="col-12 col-md-4">
-                            <div class="d-flex justify-content-center">
-                                <div id="new_form" class="text-white my-form mt-4">
-                                    <div class="roboto-black text-center pt-3 px-3 font-24px">
-                                        GET MY PIPE
-                                    </div>
-                                    <div class="sergoe-ui-emoji text-center px-3 font-14px">
-                                        Tell us about what you are looking for.
-                                    </div>
-                                    <div class="w-100 px-3 pt-4 pb-2">
-                                        <input class="w-100 px-2 segoe-ui-emoji font-10px" type="text" id="first_name" name="first_name" value="" placeholder="First Name" required />
-                                    </div>
-                                    <div class="w-100 px-3 py-2">
-                                        <input class="w-100 px-2 segoe-ui-emoji font-10px" type="text" id="last_name" name="last_name" placeholder="Last Name" />
-                                    </div>
-                                    <div class="w-100 px-3 py-2">
-                                        <input class="w-100 px-2 segoe-ui-emoji font-10px" type="text" id="company" name="company" placeholder="Company Name" />
-                                    </div>
-                                    <div class="w-100 px-3 py-2">
-                                        <input class="w-100 px-2 segoe-ui-emoji font-10px" type="email" id="email" name="email" placeholder="Email Address" required />
-                                    </div>
-                                    <div class="w-100 px-3 pt-2 pb-4">
-                                        <input class="w-100 px-2 segoe-ui-emoji font-10px" type="tel" id="phone" name="phone" placeholder="Phone Number" />
-                                    </div>
-                                    <div class="sergoe-ui-emoji px-3 pb-3 font-10px">
-                                        Product Interested In: (We only sell truckload quantities, You can mix sizes on one truck)
-                                    </div>
-                                    <div class="form-check d-flex align-items-center mx-4">
-                                        <input class="form-check-input" type="checkbox"  name="pipe_0_5" id="flexCheck1"
-                                            value="off" onclick="toggle('flexCheck1')">
-                                        <label class="form-check-label sergoe-ui-emoji mt-1 mx-2 font-10px" for="flexCheckDefault">
-                                            1/2 Inch
-                                        </label>
-                                    </div>
-                                    <div class="form-check d-flex align-items-center mx-4">
-                                        <input class="form-check-input" type="checkbox"  name="pipe_1" id="flexCheck2"
-                                        value="off" onclick="toggle('flexCheck2')">
-                                        <label class="form-check-label sergoe-ui-emoji mt-1 mx-2 font-10px" for="flexCheckChecked">
-                                            1 Inch
-                                        </label>
-                                    </div>
-                                    <div class="form-check d-flex align-items-center mx-4">
-                                        <input class="form-check-input" type="checkbox"  name="pipe_1_5" id="flexCheck3"
-                                        value="off" onclick="toggle('flexCheck3')">
-                                        <label class="form-check-label sergoe-ui-emoji mt-1 mx-2 font-10px" for="flexCheckChecked">
-                                            1 1/2 Inch
-                                        </label>
-                                    </div>
-                                    <div class="form-check d-flex align-items-center mx-4">
-                                        <input class="form-check-input" type="checkbox"  name="pipe_2" id="flexCheck4"
-                                        value="off" onclick="toggle('flexCheck4')">
-                                        <label class="form-check-label sergoe-ui-emoji mt-1 mx-2 font-10px" for="flexCheckChecked">
-                                            2 Inch
-                                        </label>
-                                    </div>
-                                    <div class="form-check d-flex align-items-center mx-4">
-                                        <input class="form-check-input" type="checkbox"  name="pipe_2_5" id="flexCheck5"
-                                        value="off" onclick="toggle('flexCheck5')">
-                                        <label class="form-check-label sergoe-ui-emoji mt-1 mx-2 font-10px" for="flexCheckChecked">
-                                            2 1/2 Inch
-                                        </label>
-                                    </div>
-                                    <div class="form-check d-flex align-items-center mx-4">
-                                        <input class="form-check-input" type="checkbox"  name="pipe_3" id="flexCheck6"
-                                        value="off" onclick="toggle('flexCheck6')">
-                                        <label class="form-check-label sergoe-ui-emoji mt-1 mx-2 font-10px" for="flexCheckChecked">
-                                            3 Inch
-                                        </label>
-                                    </div>
-                                    <div class="form-check d-flex align-items-center mx-4 mb-4">
-                                        <input class="form-check-input" type="checkbox"  name="pipe_4" id="flexCheck7"
-                                        value="off" onclick="toggle('flexCheck7')">
-                                        <label class="form-check-label sergoe-ui-emoji mt-1 mx-2 font-10px" for="flexCheckChecked">
-                                            4 Inch
-                                        </label>
-                                    </div>
-                                    <div class="d-flex justify-content-center">
-                                        <button class="text-white mb-4 px-5 submit" type="button" onclick="sendData()">
-                                            SUBMIT</button>
-                                    </div>
+    <div>
+        <img class="w-100 d-block d-md-none" style="min-height: 300px; object-fit: cover;"
+             src="assets/images/FOTO PLANTA 1.png" alt="plant"/>
+        <div class="w-100 h-100 pipe-form">
+            <div class="container w-100 h-100">
+                <div class="row w-100 h-100 justify-content-center m-0">
+                    <div class="col-8 d-none d-md-block"></div>
+                    <div class="col-12 col-md-4">
+                        <div class="d-flex justify-content-center">
+                            <div id="new_form" class="text-white my-form mt-4">
+                                <div class="roboto-black text-center pt-3 px-3 font-24px">
+                                    GET MY PIPE
+                                </div>
+                                <div class="sergoe-ui-emoji text-center px-3 font-14px">
+                                    Tell us about what you are looking for.
+                                </div>
+                                <div class="w-100 px-3 pt-4 pb-2">
+                                    <input class="w-100 px-2 segoe-ui-emoji font-10px" type="text" id="first_name"
+                                           name="first_name" value="" placeholder="First Name" required/>
+                                </div>
+                                <div class="w-100 px-3 py-2">
+                                    <input class="w-100 px-2 segoe-ui-emoji font-10px" type="text" id="last_name"
+                                           name="last_name" placeholder="Last Name"/>
+                                </div>
+                                <div class="w-100 px-3 py-2">
+                                    <input class="w-100 px-2 segoe-ui-emoji font-10px" type="text" id="company"
+                                           name="company" placeholder="Company Name"/>
+                                </div>
+                                <div class="w-100 px-3 py-2">
+                                    <input class="w-100 px-2 segoe-ui-emoji font-10px" type="email" id="email"
+                                           name="email" placeholder="Email Address" required/>
+                                </div>
+                                <div class="w-100 px-3 pt-2 pb-4">
+                                    <input class="w-100 px-2 segoe-ui-emoji font-10px" type="tel" id="phone"
+                                           name="phone" placeholder="Phone Number"/>
+                                </div>
+                                <div class="sergoe-ui-emoji px-3 pb-3 font-10px">
+                                    Product Interested In: (We only sell truckload quantities, You can mix sizes on one
+                                    truck)
+                                </div>
+                                <div class="form-check d-flex align-items-center mx-4">
+                                    <input class="form-check-input" type="checkbox" name="pipe_0_5" id="flexCheck1"
+                                           value="off" onclick="toggle('flexCheck1')">
+                                    <label class="form-check-label sergoe-ui-emoji mt-1 mx-2 font-10px">
+                                        1/2 Inch
+                                    </label>
+                                </div>
+                                <div class="form-check d-flex align-items-center mx-4">
+                                    <input class="form-check-input" type="checkbox" name="pipe_1" id="flexCheck2"
+                                           value="off" onclick="toggle('flexCheck2')">
+                                    <label class="form-check-label sergoe-ui-emoji mt-1 mx-2 font-10px">
+                                        1 Inch
+                                    </label>
+                                </div>
+                                <div class="form-check d-flex align-items-center mx-4">
+                                    <input class="form-check-input" type="checkbox" name="pipe_1_5" id="flexCheck3"
+                                           value="off" onclick="toggle('flexCheck3')">
+                                    <label class="form-check-label sergoe-ui-emoji mt-1 mx-2 font-10px">
+                                        1 1/2 Inch
+                                    </label>
+                                </div>
+                                <div class="form-check d-flex align-items-center mx-4">
+                                    <input class="form-check-input" type="checkbox" name="pipe_2" id="flexCheck4"
+                                           value="off" onclick="toggle('flexCheck4')">
+                                    <label class="form-check-label sergoe-ui-emoji mt-1 mx-2 font-10px">
+                                        2 Inch
+                                    </label>
+                                </div>
+                                <div class="form-check d-flex align-items-center mx-4">
+                                    <input class="form-check-input" type="checkbox" name="pipe_2_5" id="flexCheck5"
+                                           value="off" onclick="toggle('flexCheck5')">
+                                    <label class="form-check-label sergoe-ui-emoji mt-1 mx-2 font-10px">
+                                        2 1/2 Inch
+                                    </label>
+                                </div>
+                                <div class="form-check d-flex align-items-center mx-4">
+                                    <input class="form-check-input" type="checkbox" name="pipe_3" id="flexCheck6"
+                                           value="off" onclick="toggle('flexCheck6')">
+                                    <label class="form-check-label sergoe-ui-emoji mt-1 mx-2 font-10px">
+                                        3 Inch
+                                    </label>
+                                </div>
+                                <div class="form-check d-flex align-items-center mx-4 mb-4">
+                                    <input class="form-check-input" type="checkbox" name="pipe_4" id="flexCheck7"
+                                           value="off" onclick="toggle('flexCheck7')">
+                                    <label class="form-check-label sergoe-ui-emoji mt-1 mx-2 font-10px">
+                                        4 Inch
+                                    </label>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <button class="text-white mb-4 px-5 submit" type="button" onclick="sendData()">
+                                        SUBMIT
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <img class="w-100 d-none d-md-block" src="assets/images/FOTO PLANTA 1.png" alt="plant" />
         </div>
+        <img class="w-100 d-none d-md-block" src="assets/images/FOTO PLANTA 1.png" alt="plant"/>
+    </div>
 
-        <div class="container my-4 mb-5 who-container">
-            <div class="row">
-                <div class="col-12 col-md-8">
-                    <div class="row">
-                        <div class="col-12 col-md-6">
-                            <img class="w-100" src="assets/images/5017-694.png" alt="plant" />
+    <div class="container my-4 mb-5 who-container">
+        <div class="row">
+            <div class="col-12 col-md-8">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <img class="w-100" src="assets/images/5017-694.png" alt="plant"/>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="text-center roboto-black mb-3 font-28px modal-color fw-700 who-title">
+                            WHO ARE WE?
                         </div>
-                        <div class="col-12 col-md-6">
-                            <div class="text-center roboto-black mb-3 font-28px modal-color fw-700 who-title">
-                                WHO ARE WE?
-                            </div>
-                            <div class="intern font-18px modal-color fw-400">
-                                H2O Imports is a truckload quantity wholesaler. When buying from us, you save thousands by not paying distribution profit. We sell directly to you from the manufacturer! Contact us today to get your truckload quantity price!
-                            </div>
+                        <div class="intern font-18px modal-color fw-400">
+                            H2O Imports is a truckload quantity wholesaler. When buying from us, you save thousands by
+                            not paying distribution profit. We sell directly to you from the manufacturer! Contact us
+                            today to get your truckload quantity price!
                         </div>
+                    </div>
                 </div>
                 <div class="col-4 d-none d-md-block">
 
                 </div>
             </div>
         </div>
-
     </div>
 
     <div class="w-100 bullet-form">
@@ -158,7 +167,9 @@
                                 <span class="svg-icon bullet-01"></span>
                             </div>
                             <div class="h-100 section3-text">
-                                <div class="h-100 d-flex align-items-center h-50">You tell us what product you are interested in.</div>
+                                <div class="h-100 d-flex align-items-center h-50">You tell us what product you are
+                                    interested in.
+                                </div>
                             </div>
                         </div>
                         <div class="w-100 segoe-ui-emoji bg-white my-3">
@@ -174,7 +185,9 @@
                                 <span class="svg-icon bullet-03"></span>
                             </div>
                             <div class="h-100 section3-text">
-                                <div class="h-100 d-flex align-items-center h-50">You accept the quote and make your first payment</div>
+                                <div class="h-100 d-flex align-items-center h-50">You accept the quote and make your
+                                    first payment
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -216,159 +229,156 @@
             COPYRIGHT 2023, H2O Imports, LLC
         </div>
     </footer>
-    
 
-    <div class="modal fade bd-example-modal-sm" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModal" aria-hidden="true">
+
+    <div class="modal fade bd-example-modal-sm" id="successModal" tabindex="-1" role="dialog"
+         aria-labelledby="successModal" aria-hidden="true">
         <div class="modal-dialog modal-sm">
-          <div class="modal-content bg-success text-white">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Success.</h5>
-                <button type="button" class="close bg-success border-0 text-white" data-bs-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
+            <div class="modal-content bg-success text-white">
+                <div class="modal-header">
+                    <h5 class="modal-title">Success.</h5>
+                    <button type="button" class="close bg-success border-0 text-white" data-bs-dismiss="modal"
+                            aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Your data has been submitted successfully.
+                </div>
             </div>
-            <div class="modal-body">
-                Your data has been submitted successfully.
-            </div>
-          </div>
         </div>
     </div>
 
-    <div class="modal fade bd-example-modal-sm" id="failureModal" tabindex="-1" role="dialog" aria-labelledby="successModal" aria-hidden="true">
+    <div class="modal fade bd-example-modal-sm" id="failureModal" tabindex="-1" role="dialog"
+         aria-labelledby="successModal" aria-hidden="true">
         <div class="modal-dialog modal-sm">
             <div class="modal-content bg-danger text-white">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Failure.</h5>
-                    <button type="button" class="close bg-danger border-0 text-white" data-bs-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
+                    <h5 class="modal-title">Failure.</h5>
+                    <button type="button" class="close bg-danger border-0 text-white" data-bs-dismiss="modal"
+                            aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
                     Something went wrong.
                 </div>
-              </div>
+            </div>
         </div>
     </div>
 
     <div id="preloader" class="preloader">
         <div class="loader"></div>
     </div>
+</div>
 
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
 
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script>
 
-    <script>
+    function toggle(id) {
+        let input = $('#' + id).val();
 
-        function toggle(id)
-        {
-            let input = $('#' + id).val();
+        if (input == "on")
+            $('#' + id).val('off');
+        else
+            $('#' + id).val('on');
+    }
 
-            if (input == "on")
-                $('#' + id).val('off');
-            else
-                $('#' + id).val('on');
+    function sendData() {
+        $("#preloader").fadeIn();
+
+        let data = {};
+
+        $('#new_form').find('input, textarea, select').each(function (x, field) {
+            if (field.name) {
+                if (field.name.indexOf('[]') > 0) {
+                    if (!$.isArray(data[field.name])) {
+                        data[field.name] = new Array();
+                    }
+                    data[field.name].push(field.value);
+                } else {
+                    data[field.name] = field.value;
+                }
+            }
+        });
+
+        let new_data = {}, count = 0;
+
+        new_data.name = data.first_name + ' ' + data.last_name;
+        new_data.email = data.email;
+        new_data.message = '\r\n' +
+            'Company : ' + data.company + '\r\n' +
+            'Phone : ' + data.phone + '\r\n' +
+            'Pipes : ';
+
+        if (data.pipe_0_5 !== "off") {
+            new_data.message = new_data.message + "1/2 Inch";
+            ++count;
         }
 
-        function sendData()
-        {
-            $("#preloader").fadeIn();
+        if (data.pipe_1 !== "off") {
+            new_data.message = new_data.message + (count > 0 ? ", " : "") + "1 Inch";
+            ++count;
+        }
 
-            let data = {};
+        if (data.pipe_2 !== "off") {
+            new_data.message = new_data.message + (count > 0 ? ", " : "") + "2 Inch";
+            ++count;
+        }
 
-            $('#new_form').find('input, textarea, select').each(function(x, field) {
-                if (field.name) {
-                    if (field.name.indexOf('[]')>0) {
-                        if (!$.isArray(data[field.name])) {
-                        data[field.name]=new Array();
-                        }
-                        data[field.name].push(field.value);
-                    } else {
-                        data[field.name]=field.value;
-                    }
-                }                   
+        if (data.pipe_3 !== "off") {
+            new_data.message = new_data.message + (count > 0 ? ", " : "") + "3 Inch";
+            ++count;
+        }
+
+        if (data.pipe_4 !== "off") {
+            new_data.message = new_data.message + (count > 0 ? ", " : "") + "4 Inch";
+            ++count;
+        }
+
+        if (data.pipe_1_5 !== "off") {
+            new_data.message = new_data.message + (count > 0 ? ", " : "") + "1 1/2 Inch";
+            ++count;
+        }
+
+        if (data.pipe_2_5 !== "off") {
+            new_data.message = new_data.message + (count > 0 ? ", " : "") + "2 1/2 Inch";
+        }
+
+        submitData(new_data);
+    }
+
+    async function submitData(data = {}) {
+        let url = 'https://h20email.azurewebsites.net/api/h2oemail?code=uu6co4Yb0-UgMY4x7oFdlnfdOf-tAKKFu3zRSXB71AiJAzFu8_Q36w==';
+
+        fetch(url, {
+            method: 'POST',
+            mode: 'no-cors',
+            body: JSON.stringify(data),
+        }).then(response => {
+            $('#new_form').find('input, textarea, select').each(function (x, field) {
+                if (field.type == 'checkbox') {
+                    field.value = 'off';
+                    field.checked = false;
+                } else {
+                    field.value = null;
+                }
             });
 
-            let new_data = {}, count = 0;
-
-            new_data.name = data.first_name + ' ' + data.last_name;
-            new_data.email = data.email;
-            new_data.message = '\r\n' +
-                    'Company : ' + data.company + '\r\n' +
-                    'Phone : ' + data.phone + '\r\n' +
-                    'Pipes : ';
-
-            if (data.pipe_0_5 !== "off")
-            {
-                new_data.message = new_data.message + "1/2 Inch";
-                ++count;
-            }
-
-            if (data.pipe_1 !== "off")
-            {
-                new_data.message = new_data.message + (count > 0 ? ", ": "") + "1 Inch";
-                ++count;
-            }
-
-            if (data.pipe_2 !== "off")
-            {
-                new_data.message = new_data.message + (count > 0 ? ", ": "") + "2 Inch";
-                ++count;
-            }
-
-            if (data.pipe_3 !== "off")
-            {
-                new_data.message = new_data.message + (count > 0 ? ", ": "") + "3 Inch";
-                ++count;
-            }
-
-            if (data.pipe_4 !== "off")
-            {
-                new_data.message = new_data.message + (count > 0 ? ", ": "") + "4 Inch";
-                ++count;
-            }
-
-            if (data.pipe_1_5 !== "off")
-            {
-                new_data.message = new_data.message + (count > 0 ? ", ": "") + "1 1/2 Inch";
-                ++count;
-            }
-
-            if (data.pipe_2_5 !== "off")
-            {
-                new_data.message = new_data.message + (count > 0 ? ", ": "") + "2 1/2 Inch";
-            }
-
-            submitData(new_data);
-        }
-        
-        async function submitData(data = {})
-        {
-            let url = 'https://h20email.azurewebsites.net/api/h2oemail?code=uu6co4Yb0-UgMY4x7oFdlnfdOf-tAKKFu3zRSXB71AiJAzFu8_Q36w==';
-
-            fetch(url, {
-                method: 'POST',
-                mode :'no-cors',
-                body : JSON.stringify(data),
-            }).then( response => {
-                $('#new_form').find('input, textarea, select').each(function(x, field) {
-                    if(field.type == 'checkbox')
-                    {
-                        field.value = 'off';
-                        field.checked = false;
-                    } else {
-                        field.value = null;
-                    }  
-                });
-
-                $("#preloader").fadeOut();
-                $('#successModal').modal('show');
-            } )
-            .catch (error => {
+            $("#preloader").fadeOut();
+            $('#successModal').modal('show');
+        })
+            .catch(error => {
                 $("#preloader").fadeOut();
                 $('#failureModal').modal('show');
             })
-        }
-    </script>
+    }
+</script>
+
+<script defer src="https://connect.podium.com/widget.js#ORG_TOKEN=f4411931-49ab-4654-a811-b404bad07505"
+        id="podium-widget" data-organization-api-token="f4411931-49ab-4654-a811-b404bad07505"></script>
+
 </body>
 
 </html>
